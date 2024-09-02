@@ -1,0 +1,38 @@
+body {
+    background-color: #d6e0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+ 
+.QR {
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.QR img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.QR h1 {
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+    color: #2d334a;
+}
+
+.QR p {
+    font-size: 14px;
+    color: #6c7a92;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
