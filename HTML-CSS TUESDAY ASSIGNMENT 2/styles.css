@@ -10,6 +10,42 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
     }
+
+    .step-progress {
+        display: flex;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+    
+    .step {
+        display: flex;
+        align-items: center;
+    }
+    
+    .step-icon {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px; /* Aligns the text vertically */
+        margin-right: 5px;
+    }
+    
+    .step-line {
+        width: 50px;
+        height: 2px;
+        background-color: black;
+        margin: 0 10px;
+    }
+    
+    .step span {
+        margin-right: 10px;
+    }
+
+    
 nav {
         display: flex;
         justify-content: space-around;
@@ -27,6 +63,10 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
+}
+.account-section{
+width: 40%;
+
 }
 
 .account-info {
@@ -68,6 +108,7 @@ input[type="email"], input[type="password"], .discount-form input {
     text-align: right; /* Aligns the content of the container to the right */
     margin-top: 10px; /* Adds a little space above the buttons */
     color: #333;
+    justify-content: space-between;
 }
 button {
     background: #0066cc;
@@ -76,8 +117,8 @@ button {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    
-}
+    color: #333;
+    }
 
 button:hover {
     background: #0057b8;
@@ -95,12 +136,18 @@ button:hover {
     border-bottom: 1px solid #eee;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
     height: 30%;
-    width: 20%;
+    width: 40%;
 }
 
 .order-summary .description {
     margin-left: 20px;
+}
+
+.product img {
+    width: 50%; /* As set inline, adjust if needed */
+    max-width: 200px; /* Maximum width to control sizing on larger screens */
 }
 
 .quantity button {
@@ -116,4 +163,5 @@ button:hover {
 .pricing p {
     display: flex;
     justify-content: space-between;
+    margin: 10px 0;
 }

@@ -35,11 +35,28 @@
             </nav>
         </header>
         <main>
-            <section class="account-section" style="background-color:rgb(197, 212, 223);">
-                <h2>Account details</h2>
+            <section class="account-section" style="background-color:rgb(236, 239, 240);">
+                <div class="step-progress">
+                    <div class="step">
+                        <span class="step-icon">&#10003;</span> <!-- Unicode for checkmark -->
+                        <span>Account</span>
+                    </div>
+                    <div class="step-line"></div> <!-- Line connecting steps -->
+                    <div class="step">
+                        <span class="step-icon">&#10003;</span> <!-- Unicode for checkmark -->
+                        <span>Shipping</span>
+                    </div>
+                    <div class="step-line"></div> <!-- Line connecting steps -->
+                    <div class="step">
+                        <span class="step-icon">-</span> <!-- Placeholder if no checkmark -->
+                        <span>Payment</span>
+                    </div>
+                </div>
+                
+                <h2 style="margin-top: 10px;">Account details</h2>
                 <form>
                     <label for="email">Email address</label>
-                    <input type="email" id="email" name="email" value="Email@myemail.com">
+                    <input type="email" id="email" name="email" value="input your Email">
                     
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" value="password">
@@ -47,33 +64,38 @@
                 </form>
 
                 <div class="button-container">
-                    <button type="button">Register for account</button>
-                    <button type="submit">Login</button>
+                    <button type="button" style="background-color:rgb(236, 239, 240); ">Register Account</button>
+                    <button type="submit" style="color: aliceblue;">Login</button>
                 </div>
                 
                 <div class="button-container">
-                    <button type="button" style="background-color: aliceblue; ">Cancel order</button>
-                    <button type="button" style="background-color: blue;">Shipping details</button>
+                    <button type="button" style="background-color:rgb(236, 239, 240); ">Cancel order</button>
+                    <button type="button" style="background-color: blue; color: aliceblue;">Shipping details</button>
                 </div>
             </section>
-            <section class="order-summary" style="background-color:rgb(197, 212, 223);">
+
+
+            <section class="order-summary" style="background-color:rgb(236, 239, 240); width: 40%;">
                 <h2>Order Summary</h2>
+
                 <div class="product">
-                    <img src="./headphones.webp" alt="Sony wireless headphones" style="height: 150px;">
+                    <img src="./headphones.webp" alt="Sony wireless headphones">
                     <div class="description">
-                        <p>Sony wireless headphones</p>
+                        <p class="product-title">Sony wireless headphones</p>
                         <div class="quantity">
                             <button>-</button>
                             <input type="number" value="1">
                             <button>+</button>
                         </div>
-                        <p>£320.45</p>
+                        <p class="price">£320.45</p>
                     </div>
                 </div>
+                
                 <form class="discount-form">
                     <input type="text" placeholder="Gift Card / Discount code">
                     <button type="submit">Apply</button>
                 </form>
+
                 <div class="pricing">
                     <p>Sub total <span>£316.55</span></p>
                     <p>Tax <span>£3.45</span></p>
