@@ -64,7 +64,11 @@ input[type="email"], input[type="password"], .discount-form input {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-
+.button-container {
+    text-align: right; /* Aligns the content of the container to the right */
+    margin-top: 10px; /* Adds a little space above the buttons */
+    color: #333;
+}
 button {
     background: #0066cc;
     color: #fff;
@@ -72,6 +76,7 @@ button {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    
 }
 
 button:hover {
