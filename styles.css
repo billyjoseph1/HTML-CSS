@@ -1,38 +1,44 @@
 body {
-    background-color: #d6e0f0;
+   background-image: url(../goat.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-   
     font-family: Arial, sans-serif;
 }
  
+.parent{
+    background-color: white;
+    width: 270px;
+    text-align: center;
+    height: 62%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+    flex-direction: column;
+}
 .QR {
     background-color: white;
-    width: 300px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 270px;
+    border-radius: 10px;
     overflow: hidden;
-    text-align: center;
+    margin-bottom: 10%;
 }
 
-.QR img {
+ img {
     width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    object-fit: contain;
+    
 }
 
-.QR h1 {
+.text h1 {
     font-size: 18px;
-    margin: 20px 0 10px 0;
     font-weight: bold;
     color: #2d334a;
 }
 
-.QR p {
+.text p {
     font-size: 14px;
     color: #6c7a92;
-    padding: 0 20px;
-    margin-bottom: 20px;
 }

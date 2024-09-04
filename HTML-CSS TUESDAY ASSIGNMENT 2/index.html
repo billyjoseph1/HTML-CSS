@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body>
+        <header>
+            <nav>
+                <img src="./sony.png" alt="Sony wireless headphones" style="height: 40px;">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <div class="account-info">
+                            <select id="dropdown" name="dropdown">
+                            <option value="option1">Account</option>
+                            <option value="option2">Account details</option>
+                            <option value="option3">Order Summary</option>
+                            <option value="option2">Cancel order</option>
+                            <option value="option3">Shipping details</option>
+                            </select>
+                    <div class="cart">
+                        <img src="./lock.jpeg" alt="Sony wireless headphones" style="height: 40px;">
+                        <span>3 items</span>
+                    </div>
+                    <img src="./ff.jpg" alt="Sony wireless headphones" style="height: 40px;">
+                    
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="account-section">
+                <h2>Account details</h2>
+                <form>
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" value="Email@myemail.com">
+                    
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" value="password">
+                    
+                    <button type="button">Register for account</button>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="actions">
+                    <button type="button">Cancel order</button>
+                    <button type="button">Shipping details</button>
+                </div>
+            </section>
+            <section class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="product">
+                    <img src="./headphones.webp" alt="Sony wireless headphones" style="height: 150px;">
+                    <div class="description">
+                        <p>Sony wireless headphones</p>
+                        <div class="quantity">
+                            <button>-</button>
+                            <input type="number" value="1">
+                            <button>+</button>
+                        </div>
+                        <p>£320.45</p>
+                    </div>
+                </div>
+                <form class="discount-form">
+                    <input type="text" placeholder="Gift Card / Discount code">
+                    <button type="submit">Apply</button>
+                </form>
+                <div class="pricing">
+                    <p>Sub total <span>£316.55</span></p>
+                    <p>Tax <span>£3.45</span></p>
+                    <p>Shipping <span>Free</span></p>
+                    <p>Total <span>£320.45</span></p>
+                </div>
+            </section>
+        </main>  
+
+
+
+
+
+</body>
+</html>
