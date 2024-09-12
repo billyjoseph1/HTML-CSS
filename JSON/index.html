@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Our Products</h1>
+    <ul id="product-list"></ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('http://localhost:3000/products')
+            .then(response => response.json())
+            .then(data => {
+                const productList = document.getElementById('product-list');
+                data.forEach(product => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<strong>${product.name}</strong> - $${product.price}<br>${product.description}`;
+                    productList.appendChild(li);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>
