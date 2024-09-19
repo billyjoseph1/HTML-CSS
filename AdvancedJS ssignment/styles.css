@@ -1,0 +1,20 @@
+/* styling */
+#event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+      
+}
+.event-card {
+    margin: 10px;
+    border: 1px solid #ccc;
+    transition: transform 0.2s;
+}
+.event-card:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 6px) {
+    #event-list {
+        flex-direction: column;
+    }
+}
