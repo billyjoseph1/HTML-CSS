@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Event Listening</title>
+  </head>
+
+  <body>
+    <!-- onclick listens the function when called(clicked) -->
+    <p>The onclick event triggers a function when an element is clicked on.</p>
+    <p>Click to trigger a function that will output the colors:</p>
+    <button onclick="goyellow()" style="color: rgb(222, 236, 20)">
+      GO YELLOW
+    </button>
+    <button onclick="goblue()" style="color: rgb(92, 43, 226)">GO BLUE</button>
+    <button onclick="gogreen()" style="color: hsl(138, 91%, 50%)">
+      GO GREEN
+    </button>
+
+    <!-- styling with js -->
+    <script>
+      function goyellow() {
+        document.body.style.backgroundColor = "yellow";
+      }
+      function goblue() {
+        document.body.style.backgroundColor = "blue";
+      }
+      function gogreen() {
+        document.body.style.backgroundColor = "green";
+      }
+
+      //this is how we add javascript in html -->
+      //there are to ways to add js in html -->
+      <p id="demo"></p>;
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+      }
+    </script>
+    <button onclick="myFunction()" style="color: black">Click me</button>
+  </body>
+</html>
