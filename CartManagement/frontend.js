@@ -9,8 +9,8 @@ try{
         let contentDisplay = document.getElementById('contents');//gets HTML id
         contents.forEach(content => {
             let contentDiv = document.createElement('div')
-            contentDiv.classList.add('contents')
             
+            contentDiv.classList.add('contents')
             contentDiv.innerHTML = `
                 <img src="${content.imageUrl}" alt="${content.id}">
                 <h4>${content.title}</h4>

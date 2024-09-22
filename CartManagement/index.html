@@ -5,12 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>THE CART MANAGEMENT FEATURE</title>
     <style>
-      .contents{
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4e1e1;
+        margin: 20px;
+        padding: 20px;
         display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+        /* flex-wrap: wrap;  */
       }
-    
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .contents {
+        justify-content: center;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 15px;
+        width: 800px;
+        transition: transform 0.2s;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 20px; /* Space between rows */
+      }
+
+      .contents:hover {
+        transform: scale(1.05);
+      }
+
+      .contents img {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+
+      .contents h2 {
+        font-size: 18px;
+        color: #555;
+      }
+
+      .contents p {
+        color: #777;
+        line-height: 1.5;
+      }
+
+      .contents strong {
+        color: #333;
+      }
+
+      .contents .price {
+        font-size: 16px;
+        color: #e74c3c; /* Red for discounted price */
+      }
+
+      .contents .rating {
+        color: #f39c12; /* Gold color for rating */
+      }
     </style>
   </head>
 
