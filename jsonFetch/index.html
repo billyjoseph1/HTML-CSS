@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4e1e1;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 15px;
+    width: 280px;
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product h2 {
+    font-size: 18px;
+    color: #555;
+}
+
+.product p {
+    color: #777;
+    line-height: 1.5;
+}
+
+.product strong {
+    color: #333;
+}
+
+.product .price {
+    font-size: 16px;
+    color: #e74c3c; /* Red for discounted price */
+}
+
+.product .rating {
+    color: #f39c12; /* Gold color for rating */
+}
+    </style>
+</head>
+<body>
+    <h1>Product List</h1>
+    <div id="product-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

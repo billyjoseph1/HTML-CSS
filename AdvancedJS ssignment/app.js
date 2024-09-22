@@ -12,8 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function displayEvents(events) {
         const eventList = document.getElementById('event-list');
-        eventList.innerHTML = '';
-        events.forEach(event => {
+         events.forEach(event => {
             const card = document.createElement('div');
             card.className = 'event-card';
             card.innerHTML = `
