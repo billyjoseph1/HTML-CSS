@@ -1,9 +1,8 @@
+"use strict";
 // Annotations will often use a : - 
 // this is used to tell TypeScript that a variable or function parameter is of a certain type.
- 
-let name1: string
- name1 =  "joseph"
-
+let name1;
+name1 = "joseph";
 //  function parameter Annotations
 // const LogAlbumInfo = (title:string, tracknumber: number)
 // export const add = (a: boolean, b: boolean) => {
@@ -13,15 +12,11 @@ let name1: string
 //   function concatName(first: string, last?: string) {
 //     // ...implementation
 //   }
-
 //   const concatTwoStrings = (a, b) => {
 //     Parameter 'b' implicitly has an 'any' type.
 //     Parameter 'a' implicitly has an 'any' type.
 //       return [a, b].join(" ");
 //     };
 //     const result = concatTwoStrings("Hello", "World");
-
 // type test = Expect<Equal<typeof result, string>>;
-
 // 
-    
