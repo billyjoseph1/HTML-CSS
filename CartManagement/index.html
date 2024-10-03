@@ -4,71 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>THE CART MANAGEMENT FEATURE</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4e1e1;
-        margin: 20px;
-        padding: 20px;
-        display: flex;
-        flex-wrap: wrap; 
-      }
-
-      h1 {
-        text-align: center;
-        color: #333;
-      }
-
-      .contents {
-        justify-content: center;
-        background-color: white;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 800px;
-        transition: transform 0.2s;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px; /* Space between rows */
-      }
-
-      .contents:hover {
-        transform: scale(1.05);
-      }
-
-      .contents img {
-        max-width: 100%;
-        border-radius: 5px;
-      }
-
-      .contents h2 {
-        font-size: 18px;
-        color: #555;
-      }
-
-      .contents p {
-        color: #777;
-        line-height: 1.5;
-      }
-
-      .contents strong {
-        color: #333;
-      }
-
-      .contents .price {
-        font-size: 16px;
-        color: #e74c3c; /* Red for discounted price */
-      }
-
-      .contents .rating {
-        color: #f39c12; /* Gold color for rating */
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+      
   </head>
 
   <body>
+    <h2 style="text-align: center ; color: blue; text-decoration: solid;">PRODUCTS PAGE</h2>
+    <button onclick="addToCart()" style="width: 50px; align-items:flex-end;">Cart</button>
     <div id="contents"></div>
 
     <script src="frontend.js"></script>
+    
   </body>
 </html>

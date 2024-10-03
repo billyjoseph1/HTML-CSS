@@ -1,69 +1,56 @@
-/* Root variable for consistent spacing and color theming */
-:root {
-    --spacing: 10px;
-    --border-color: #e0d0d0;
-    --primary-color: #007BFF; /* Adjust this to fit your color scheme */
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the page */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background for the page */
 }
 
-/* Styling for the event list container */
-#contents-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: var(--spacing);
-    gap: var(--spacing);
+/* Container styling */
+#contents {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates as many columns as can fit of minimum 300px and maximum 1fr */
+    gap: 20px; /* Sets gap between grid items */
+    padding: 20px; /* Adds padding around the grid */
 }
 
-/* Styling for individual event cards */
-.contents-card {
-    width: 300px; /* Fixed width for consistency */
-    margin: var(--spacing);
-    border: 1px solid var(--border-color);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
-    transition: transform 0.2s;
-    overflow: hidden; /* Keeps child elements contained within the card */
+/* Individual product styling */
+div {
+    background-color: white; /* White background for each product */
+    border: 1px solid #ccc; /* Light grey border around each product */
+    border-radius: 8px; /* Rounded corners for the product boxes */
+    overflow: hidden; /* Ensures nothing spills out of the product box */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow around products */
+    transition: transform 0.2s; /* Smooth transform effect on hover */
 }
 
-.contents-card:hover {
-    transform: scale(1.05);
-    border-color: var(--primary-color);
+div:hover {
+    transform: scale(1.05); /* Scales up product div on hover */
 }
 
-/* Image styling */
-.contents-card img {
-    width: 100%;
-    height: 200px; /* Fixed height for consistency */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+img {
+    width: 100%; /* Ensures images take up the full container width */
+    height: 200px; /* Sets a fixed height for images */
+    object-fit: cover; /* Ensures images cover the space without distorting */
 }
 
-/* Content styling inside the event card */
-.contents-card h4,
-.contents-card p {
-    padding: 0 10px; /* Horizontal padding for text */
+h4, p {
+    margin: 10px; /* Adds margin around text elements */
+    text-align: center; /* Centers text within the product box */
 }
 
-.contents-card button {
-    display: block;
-    width: calc(100% - 20px); /* Full width minus padding */
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: rgb(216, 31, 31);
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+button {
+    display: block; /* Ensures button takes full width */
+    width: calc(100% - 20px); /* Button width taking into account padding */
+    padding: 10px; /* Padding inside the button */
+    margin: 10px auto; /* Centers button and adds margin around it */
+    background-color: #007BFF; /* Bright blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
-.contents-card button:hover {
-    background-color: darken(var(--primary-color), 10%);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #contents-list {
-        flex-direction: column;
-        align-items: center;
-    }
-    .contents-card {
-        width: 90%; /* More width on smaller screens */
-    }
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }

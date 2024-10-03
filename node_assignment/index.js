@@ -7,7 +7,7 @@ const myEmitter = new MyEmitter();
 
 // Emit an event with a log message
 setTimeout(() => {
-  myEmitter.emit('log', 'new log event emitted');
+  myEmitter.emit('log', 'I AM WHO I AM ');
 }, 2000);
 
 // Listen for the 'log' event

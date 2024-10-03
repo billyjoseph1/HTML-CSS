@@ -24,7 +24,7 @@
       }
 
       .product {
-        background-color: white;
+        background-color: rgb(241, 233, 233);
         border: 1px solid #ddd;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -65,10 +65,45 @@
       .product .rating {
         color: #f39c12; /* Gold color for rating */
       }
+      .search-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .search-container input,
+      .search-container button {
+        margin: 0 10px;
+        width: 150px;
+        height: 20px;
+        border-radius: 30px;
+      }
+      .search-container button {
+        margin: 0 10px;
+        width: 150px;
+        height: 30px;
+        background-color: #aeb7d2;
+        border-radius: 30px;
+      }
     </style>
   </head>
+
   <body>
     <h1>Product List</h1>
+
+    <div class="search-container">
+      <input type="text" id="searchName" placeholder="Search by name" />
+      <input type="number" id="searchPrice" placeholder="Max price" />
+      <button onclick="applyFilters()">Search</button>
+    </div>
+
+    <div id="favorites-cart">
+      <h2>Favorites Cart</h2>
+      <ul id="cart-list">
+        <!-- Cart items will be dynamically inserted here -->
+      </ul>
+    </div>
+    
+    
+
     <div id="product-container"></div>
 
     <script src="script.js"></script>

@@ -8,9 +8,19 @@
   </head>
 
   <body>
+    <h1 style="text-align: center; color: rgb(65, 53, 240);">ADVANCED JS</h1>
     <div id="filters">
-      <!-- Filters will be inserted here -->
+      <input type="number" id="priceFilter" placeholder="Max Price">
+      <button onclick="filterEventsByPrice(document.getElementById('priceFilter').value)">Filter by Price</button>
+      
+      <input type="date" id="dateFilter">
+      <button onclick="filterEventsByDate(document.getElementById('dateFilter').value)">Filter by Date</button>
+      
+      <input type="text" id="locationFilter" placeholder="Location">
+      <button onclick="filterEventsByLocation(document.getElementById('locationFilter').value)">Filter by Location</button>
     </div>
+      
+
 
     <div id="event-list">
       <!-- Event cards will be displayed here -->

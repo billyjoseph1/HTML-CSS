@@ -1,20 +1,87 @@
-/* styling */
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the page */
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Light grey background */
+}
+
+/* Styling for the event list container */
 #event-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-      
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates responsive columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
 }
+
+/* Individual event card styling */
 .event-card {
-    margin: 10px;
-    border: 1px solid #e4dcdc;
-    transition: transform 0.2s;
+    background: white; /* White background for the cards */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures nothing spills out */
+    transition: transform 0.2s; /* Smooth transform effect on hover */
 }
+
 .event-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px); /* Lifts card on hover */
 }
-@media (max-width: 6px) {
+
+.event-card img {
+    width: 100%; /* Ensures image covers the card width */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+.event-card h2 {
+    font-size: 1.2em; /* Larger text for title */
+    margin: 16px; /* Margin around title */
+}
+
+.event-card p {
+    font-size: 0.9em; /* Smaller text for details */
+    color: #666; /* Dark grey color for text */
+    margin: 0 16px 16px; /* Margins for paragraph */
+}
+
+/* Styling filters container for future expansion */
+#filters {
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+}
+@media (max-width: 600px) {
     #event-list {
-        flex-direction: column;
+      grid-template-columns: 1fr; /* Stack on smaller screens */
     }
-}
+  }
+  
+  .event-card {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  #filters input, #filters button {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 35px;
+    border: 1px solid #ccc;
+    color: #151111;
+    background-color: rgb(235, 231, 226);
+   
+  }
+
+
+  #filters button:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+    
+      
